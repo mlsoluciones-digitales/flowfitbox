@@ -55,7 +55,7 @@ html{
     background-image: 
         linear-gradient(
             rgba(63, 63, 63, 0.30)),
-        url(/image/heroFlow.png);
+        url(../image/heroFlow.png);
     
     background-position: center;
     background-repeat: no-repeat;
