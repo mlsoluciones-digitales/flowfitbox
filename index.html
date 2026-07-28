@@ -28,11 +28,11 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item">INICIO</a>
-                <a class="navbar-item">NOSOTROS</a>
-                <a class="navbar-item">ENTRENAMIENTOS</a>
-                <a class="navbar-item">HORARIOS</a>
-                <a class="navbar-item">CONTACTO</a>
+                <a href="#inicio" class="navbar-item">INICIO</a>
+                <a href="#nosotros" class="navbar-item">NOSOTROS</a>
+                <a href="#entrenamientos" class="navbar-item">ENTRENAMIENTOS</a>
+                <a href="#horarios" class="navbar-item">HORARIOS</a>
+                <a href="#contacto" class="navbar-item">CONTACTO</a>
             </div>
         </div>
     </nav>
@@ -50,10 +50,141 @@
             </p>
         </div>
     </section>
-
-    <section>NOSOTROS</section>
-    <section>ENTRENAMIENTOS</section>
-    <section>HORARIOS</section>
-    <section>CONTACTO</section>
+    <section class="frase">
+        <div class="fraseInspiradora">
+            <h2 class="tituloSecciones">ONE <br>MORE <br>REP</h2>
+        </div>
+    </section>
+    <section id="nosotros">NOSOTROS</section>
+    <section id="entrenamientos" class="seccionEntrenamientos">
+        <div>
+            <h2 class="tituloSecciones">ENTRENAMIENTOS</h2>
+        </div>
+        <div class="columns is-centered is-multiline">
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-image card-image-entrenamientos">
+                        <figure class="image">
+                            <img src="image/crossfit1.webp" alt="">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="title titulo-entrenamiento">
+                            CROSSFIT
+                        </h3>
+                        <p class="texto-entrenamiento">
+                            Entrenamiento de alta intensidad que combina fuerza, resistencia, gimnasia y levantamiento olímpico. Cada clase propone nuevos desafíos para mejorar tu rendimiento físico de manera integral.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-image card-image-entrenamientos">
+                        <figure class="image">
+                            <img src="image/funcional1.webp" alt="">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="title titulo-entrenamiento">
+                            FUNCIONAL
+                        </h3>
+                        <p class="texto-entrenamiento">
+                            Entrenamiento basado en movimientos naturales del cuerpo que mejora la fuerza, el equilibrio, la movilidad y la resistencia. Ideal para potenciar el rendimiento en la vida diaria y en cualquier deporte.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-image card-image-entrenamientos">
+                        <figure class="image">
+                            <img src="image/adolescente1.webp" alt="">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="title titulo-entrenamiento">
+                            CONSTRUCCION DEL DEPORTISTA ADOLESCENTE
+                        </h3>
+                        <p class="texto-entrenamiento">
+                            Programa diseñado para jóvenes que buscan desarrollar una base física sólida. Se trabaja la técnica, la coordinación, la fuerza y la movilidad en un entorno seguro, favoreciendo un crecimiento deportivo saludable.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-image card-image-entrenamientos">
+                        <figure class="image">
+                            <img src="image/hyrox1.webp" alt="">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="title titulo-entrenamiento">
+                            HYROX
+                        </h3>
+                        <p class="texto-entrenamiento">
+                            Entrenamiento que combina carrera y estaciones de ejercicios funcionales, inspirado en la competencia internacional HYROX. Perfecto para quienes buscan mejorar su resistencia, velocidad y capacidad física general.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-image card-image-entrenamientos">
+                        <figure class="image">
+                            <img src="image/musculacion1.webp" alt="">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="title titulo-entrenamiento">
+                            MUSCULACION
+                        </h3>
+                        <p class="texto-entrenamiento">
+                            Programa orientado al desarrollo de la fuerza y la masa muscular mediante ejercicios con cargas progresivas. Adaptado a todos los niveles, desde principiantes hasta atletas experimentados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id=" horarios">HORARIOS</section>
+    <section id="contacto" class="contacto">
+        <h2 class="tituloSecciones">CONTACTO</h2>
+        <div class="containerContactos">
+            <form action="" class="formContacto">
+                <div class="field">
+                    <label class="label">NOMBRE</label>
+                    <div class="control">
+                        <input class="input" type="text" name="nombre" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">APELLIDO</label>
+                    <div class="control">
+                        <input class="input" type="text" name="nombre" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">CORREO ELECTRONICO</label>
+                    <div class="control">
+                        <input class="input" type="email" name="nombre" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">TELEFONO</label>
+                    <div class="control">
+                        <input class="input" type="tel" name="nombre" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">OBSERVACIONES</label>
+                    <div class="control">
+                        <input class="input" type="text" name="nombre" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
