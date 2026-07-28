@@ -169,6 +169,25 @@ html{
     color: white;
 }
 
-input {
-    
-} 
+.input {
+    background: rgba(0, 0, 0, 0.75);
+    color: white; 
+
+}
+
+.input:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: #D4111E;
+}
+
+.contenedorBoton{
+    text-align: center;
+}
+
+.botonForm{
+    text-align: center;
+    color: white;
+    margin-top: 1rem;
+    background: rgba(253, 2, 2, 0.45);
+}
