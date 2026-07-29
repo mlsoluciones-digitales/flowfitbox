@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 1px solid red
 }
 
 h1, h2, h4, p, label{
@@ -11,8 +12,28 @@ h1, h2, h4, p, label{
     font-style: normal;
 }
 
+p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 html{
     scroll-behavior: smooth;
+    background-color: black;
+}
+
+.tituloSecciones{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .tituloSecciones{
+        font-size: 2rem;
+    }
 }
 
 /*NAVBAR*/
@@ -82,6 +103,16 @@ html{
     color: white;
 }
 
+@media (max-width: 768px) {
+    .heroHome{
+        background-position: 55% center;
+    }
+    .containerHero{
+        margin-left: 1rem;
+    }
+
+}
+
 
 /*FRASE*/
 
@@ -95,8 +126,6 @@ html{
 }
 
 
-
-
 /*ENTRENAMIENTOS*/
 
 .seccionEntrenamientos{
@@ -106,6 +135,7 @@ html{
     background-size: cover;
     background-attachment: fixed;
     padding: 1rem;
+    overflow-x: hidden;
 }
 
 .card{
@@ -119,7 +149,7 @@ html{
 }
 
 .card-image-entrenamientos{
-    width: 394px;
+    max-width: 394px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -138,9 +168,7 @@ html{
 }
 
 
-
 /*CONTACTO*/
-
 
 .contacto{
     background-image: url(../image/fondoContacto1.png);
@@ -148,13 +176,10 @@ html{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    padding: 1rem;
 }
 
-.tituloSecciones{
-    text-align: center;
-    font-size: 3rem;
-    color: white;
-}
+
 
 .containerContactos{
     background:rgba(252, 252, 252, 0.10);
