@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +15,7 @@
 <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item">
+            <a href="#inicio" class="navbar-item">
                 <img  class="logo" src="image/logoSolo1.webp" alt="">
             </a>
 
@@ -29,6 +30,7 @@
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
                 <a href="#inicio" class="navbar-item">INICIO</a>
+                <a href="#novedades" class="navbar-item">NOVEDADES</a>
                 <a href="#nosotros" class="navbar-item">NOSOTROS</a>
                 <a href="#entrenamientos" class="navbar-item">ENTRENAMIENTOS</a>
                 <a href="#horarios" class="navbar-item">HORARIOS</a>
@@ -50,12 +52,47 @@
             </p>
         </div>
     </section>
+    <section id="novedades" class="novedades">
+        <div>
+            <h2 class="tituloSecciones">NOVEDADES</h2>
+        </div>
+
+        <div class="container">
+            <div id="carouselNovedades" class="carousel">
+                <!-- VIENE DEL JSON -->
+            </div>
+        </div>
+    </section>
     <section class="frase">
         <div class="fraseInspiradora">
             <h2 class="tituloSecciones">ONE MORE REP</h2>
         </div>
     </section>
-    <section id="nosotros">NOSOTROS</section>
+    <section id="nosotros">
+        <div>
+            <h2 class="tituloSecciones">NOSOTROS</h2>
+        </div>
+        <div class="containerNosotros">
+            <div class="textoNosotros">
+                <p> En <span>Flow Fit Box</span> creemos que cada entrenamiento es una oportunidad para superarte, crecer y descubrir todo lo que sos capaz de lograr. <br><br>
+
+                    Somos un espacio pensado para quienes buscan mejorar su salud, desarrollar su rendimiento y entrenar en un ambiente de compromiso, motivación y compañerismo. Acompañamos a cada persona respetando sus objetivos, su experiencia y su propio ritmo, porque entendemos que cada proceso es único. <br><br>
+
+                    A través de disciplinas como CrossFit, Entrenamiento Funcional, HYROX, Musculación y Construcción del Deportista Adolescente, trabajamos para desarrollar fuerza, resistencia, movilidad y confianza, siempre priorizando la técnica y el progreso seguro. <br><br>
+
+                    Más que un gimnasio, somos una comunidad. Un lugar donde cada desafío se comparte, cada avance cuenta y cada logro se celebra. <br><br>
+
+                    <span>ONE MORE REP.</span> Un esfuerzo más. Un paso más. Una mejor versión de vos.</p>
+            </div>
+            <div class="videoNosotros">
+                    <video autoplay muted loop playsinline class="videoDemostracion">
+                        <source src="videos/demostracion.mp4" type="video/mp4">
+
+                        Tu navegador no admite videos.
+                    </video>
+            </div>
+        </div>
+    </section>
     <section id="entrenamientos" class="seccionEntrenamientos">
         <div>
             <h2 class="tituloSecciones">ENTRENAMIENTOS</h2>
@@ -196,5 +233,9 @@
         <br>
         <br>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script src="js/novedades.js"></script>
+
 </body>
 </html>
