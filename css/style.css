@@ -2,7 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*outline: 1px solid red*/
+    outline: 1px solid red
+}
+
+html,
+body{
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 h1, h2, h4, p, label{
@@ -47,9 +53,8 @@ html{
 .navbar{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-    position: relative;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     background: rgba(0, 0, 0, 0.65);
 }
 
@@ -234,6 +239,11 @@ html{
     background-attachment: fixed;
     padding: 1rem;
     overflow-x: hidden;
+}
+
+.seccionEntrenamientos .columns{
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .card{
