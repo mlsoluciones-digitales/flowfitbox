@@ -1,26 +1,35 @@
-fetch("https://script.google.com/macros/s/AKfycbxsY7hsH2jg-c_NsWeR15HUUGj03Y9teb3uBbha2pUwLZqB-4uJ3WTFWCCzb4ICBOzy/exec")
-.then(response => {
-    if(!response.ok){
-        throw new Error("No se puede cargar el archivo JSON"); 
-    }
-    return response.json();
-})
-.then(novedades => {
-    mostrarNovedades(novedades); 
+async function cargarNovedades() {
 
-    //Iniciamos el carrousel de Bulma
-    bulmaCarousel.attach('#carouselNovedades', {
+    try {
+
+        const response = await fetch("https://script.google.com/macros/s/AKfycbxsY7hsH2jg-c_NsWeR15HUUGj03Y9teb3uBbha2pUwLZqB-4uJ3WTFWCCzb4ICBOzy/exec");
+
+        if (!response.ok) {
+            throw new Error("No se puede cargar el archivo JSON");
+        }
+
+        const novedades = await response.json();
+        console.log(novedades)
+        mostrarNovedades(novedades);
+
+        // Acá podríamos inicializar el carrusel
+        bulmaCarousel.attach('#carouselNovedades', {
             slidesToScroll: 1,
             slidesToShow: 3,
             loop: true,
             autoplay: true,
             autoplaySpeed: 4000
         });
+        
+        const loader = document.querySelector("#loader");
+        loader.classList.add("oculto");
 
-    }) 
-.catch(error => {
-    console.error("Error: ", error); 
-})
+    } catch (error) {
+
+        console.error("Error:", error);
+        
+    }
+}
 
 
 function mostrarNovedades(novedades){
@@ -33,7 +42,7 @@ function mostrarNovedades(novedades){
 
         contenedorNovedades.innerHTML += `
             <div class="item-${novedad.id}">
-                    <article class="card">
+                    <article class="card cardNovedad">
                         <div class="card-image">
                             <figure class="image">
                                 <img
@@ -51,3 +60,5 @@ function mostrarNovedades(novedades){
         `
     });
 }
+
+cargarNovedades();

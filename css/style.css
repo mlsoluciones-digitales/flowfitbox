@@ -47,6 +47,58 @@ html{
     }
 }
 
+/*LOADER*/
+#loader {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100vh;
+
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#loader img {
+    width: 180px;
+    height: auto;
+
+    animation: pulsoLogo 1.5s ease-in-out infinite;
+}
+
+@keyframes pulsoLogo {
+
+    0% {
+        transform: scale(0.85);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.85);
+        opacity: 0.6;
+    }
+
+}
+
+/* Cuando termina de cargar */
+
+#loader.oculto {
+    opacity: 0;
+    visibility: hidden;
+}
+
 /*NAVBAR*/
 
 .logo{
@@ -149,6 +201,14 @@ html{
     height: 835px;
 }
 
+.cardNovedad{
+    background-color: black !important;
+}
+
+.card-content{
+    text-align: center;
+    color: white;
+}
 
 /*FRASE*/
 
@@ -158,7 +218,7 @@ html{
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     
 }
 
@@ -295,6 +355,28 @@ html{
    .card{
     height: auto;
    } 
+}
+
+/*HORARIOS*/
+.containerHorarios{
+    background-image: url(../image/fondoHorarios.png);
+    padding: 2rem 1rem;
+}
+
+.logoFlow{
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerTextos p{
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}
+
+.containerTextos span{
+    color: red
 }
 
 
