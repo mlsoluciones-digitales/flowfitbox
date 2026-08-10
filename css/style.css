@@ -1,5 +1,5 @@
 :root{
-    color-scheme: dark;
+    color-scheme: dark !important;
 }
 
 *{
@@ -15,7 +15,7 @@ body{
     overflow-x: hidden;
 }
 
-h1, h2, h4, p, label{
+h1, h2, h4, label, a, .bottonReserva, .bottonForm, p{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
@@ -109,6 +109,14 @@ html{
     color: white;
 }
 
+.bottonReserva{
+    background: #D4111E;
+
+}
+.bottonReserva:hover{
+    color: black;
+}
+
 @media (max-width: 768px) {
     .heroHome{
         background-position: 55% center;
@@ -138,6 +146,7 @@ html{
     margin: 10px 12px;
     background: rgba(246, 246, 246, 0.1);
     border: white 1px solid;
+    height: 835px;
 }
 
 
@@ -150,8 +159,6 @@ html{
     background-size: cover;
     background-color: black;
     background-attachment: fixed;
-    /*border-top: 2px solid white;
-    border-bottom: 2px solid white;*/
     
 }
 
@@ -257,6 +264,7 @@ html{
 .card{
     background: rgba(0, 0, 0, 0.45);
     transition: .3s;
+    height: 827px;
     
 }
 
@@ -281,6 +289,12 @@ html{
     font-size: 0.8rem ;
     text-align: center;
     color: white;
+}
+
+@media (max-width: 768px) {
+   .card{
+    height: auto;
+   } 
 }
 
 
@@ -326,10 +340,149 @@ html{
     text-align: center;
 }
 
-.botonForm{
+.bottonForm{
     text-align: center;
     color: white;
     margin-top: 1rem;
     background: rgba(253, 2, 2, 0.45);
 }
 
+.bottonForm:hover{
+    color: black;
+}
+
+/*FOOTER*/
+
+.containerFooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerMenu{
+    padding: 2rem 1rem;
+}
+
+.footerMenu a{
+    display: block;
+    color: white;
+}
+
+.footerMenu a:hover{
+    color: #D4111E;
+}
+
+.footerLogo{
+    width: 200px;
+}
+
+.contenedorRedes div{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    padding: 0.5rem 0rem;
+}
+
+.contenedorRedes i{
+    font-size: 1.5rem;
+    color: red
+}
+
+.contenedorRedes p{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+}
+
+.contenedorRedes p:hover{
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .containerFooter{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 2rem;
+    }
+    .containerFooter div{
+        padding: 1rem 0rem;
+    }
+    .footerLogo{
+        margin-top: 2rem;
+        width: 100px;
+    }
+}
+
+/*BAJO FOOTER*/
+
+.bajoFooter{
+    background-image: 
+        linear-gradient(rgba(255, 0, 0, 0.01), 
+        rgba(255,255,255,0.20)),
+        url(../image/seccionEntrenamientos.png);
+    background-size: cover;
+    background-position: top;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+.texto1{
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 3rem;
+    font-style: normal;
+    text-align: center;
+    color: white;
+}
+
+.texto2{
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 1.5rem;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 768px ) {
+    .texto1{
+        font-size: 1.5rem;
+    }
+    .texto2{
+        font-size: 0.8rem;
+    }
+}
+
+/*COPYRIGHT*/
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+}
+
+.copyright p{
+    font-size: 1rem;
+    color: white;
+}
+
+.copyMl{
+    color: #D4111E;
+    font-weight: 900;
+}
+
+@media (max-width: 768px) {
+    .copyright{
+        display: block;
+        text-align: center;
+    }
+    .copyright p{
+        font-size: 0.8rem;
+    }
+    .copyrightP{
+        padding-bottom: 1rem;
+    }
+}

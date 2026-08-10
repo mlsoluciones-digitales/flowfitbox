@@ -1,8 +1,6 @@
 [
-    {"id": 1, "imagen": "image/promo4.png", "tituloPromo": "PROMOCIÓN DEL MES", "textoPromo": "Consultá por los beneficios disponibles."},
-    {"id": 2, "imagen": "image/promo4.png", "tituloPromo": "PROMOCIÓN DEL MES", "textoPromo": "Consultá por los beneficios disponibles."},
-    {"id": 3, "imagen": "image/promo4.png", "tituloPromo": "PROMOCIÓN DEL MES", "textoPromo": "Consultá por los beneficios disponibles."},
-    {"id": 4, "imagen": "image/promo4.png", "tituloPromo": "PROMOCIÓN DEL MES", "textoPromo": "Consultá por los beneficios disponibles."},
-    {"id": 5, "imagen": "image/promo4.png", "tituloPromo": "PROMOCIÓN DEL MES", "textoPromo": "Consultá por los beneficios disponibles."},
-    {"id": 6, "imagen": "image/promo4.png", "tituloPromo": "PROMOCIÓN DEL MES", "textoPromo": "Consultá por los beneficios disponibles."}
+    {"id": 1, "imagen": "image/novedad1.webp", "tituloPromo": "PROMOCIÓN DEL MES", "textoPromo": "¡Aprovechá un beneficio exclusivo en tu cuota! Consultanos por mensaje y no dejes pasar esta oportunidad."},
+    {"id": 2, "imagen": "image/novedad2.webp", "tituloPromo": "PRIMERA CLASE GRATIS", "textoPromo": "¿Querés sumarte? Vení a probar una clase sin ningún costo ni compromiso. ¡Escribinos para reservar tu lugar!"},
+    {"id": 3, "imagen": "image/novedad3.webp", "tituloPromo": "CAMBIO DE HORARIO", "textoPromo": "¡Atención! Actualizamos nuestra grilla. Revisá los nuevos horarios en el link de la bio / en recepción y organizá tu semana."},
+    {"id": 4, "imagen": "image/novedad4.webp", "tituloPromo": "NUEVA COMPETENCIA", "textoPromo": "¡Se viene un gran desafío! Empezá a prepararte porque muy pronto vamos a compartir todos los detalles y fechas. ¡A entrenar!"}
 ]

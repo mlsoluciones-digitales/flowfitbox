@@ -1,4 +1,4 @@
-fetch("data/novedades.json")
+fetch("https://script.google.com/macros/s/AKfycbxsY7hsH2jg-c_NsWeR15HUUGj03Y9teb3uBbha2pUwLZqB-4uJ3WTFWCCzb4ICBOzy/exec")
 .then(response => {
     if(!response.ok){
         throw new Error("No se puede cargar el archivo JSON"); 
@@ -37,14 +37,14 @@ function mostrarNovedades(novedades){
                         <div class="card-image">
                             <figure class="image">
                                 <img
-                                    src="${novedad.imagen}"
-                                    alt="${novedad.tituloPromo}"  
+                                    src="image/${novedad.imagen}"
+                                    alt="${novedad.titulo}"  
                                 >
                             </figure>
                         </div>
                         <div class="card-content">
-                            <h3 class="title is-4">${novedad.tituloPromo}</h3>
-                            <p>${novedad.textoPromo}</p>
+                            <h3 class="title is-4">${novedad.titulo}</h3>
+                            <p>${novedad.texto}</p>
                         </div>
                     </article>
             </div>
