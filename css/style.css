@@ -138,7 +138,7 @@ html{
     background-image: 
         linear-gradient(
             rgba(63, 63, 63, 0.30)),
-        url(../image/heroFlow.png);
+        url(../image/heroFlow.webp);
     
     background-position: center;
     background-repeat: no-repeat;
@@ -213,7 +213,7 @@ html{
 /*FRASE*/
 
 .frase{
-    background-image: linear-gradient(rgba(255,255,255, 0)), url(../image/fondoFrase2.png);
+    background-image: linear-gradient(rgba(255,255,255, 0)), url(../image/fondoFrase2.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -307,7 +307,7 @@ html{
 /*ENTRENAMIENTOS*/
 
 .seccionEntrenamientos{
-    background-image: url(../image/seccionEntrenamientos.png);
+    background-image: url(../image/seccionEntrenamientos.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -359,7 +359,7 @@ html{
 
 /*HORARIOS*/
 .containerHorarios{
-    background-image: url(../image/fondoHorarios.png);
+    background-image: url(../image/fondoHorarios.webp);
     padding: 2rem 1rem;
 }
 
@@ -383,7 +383,7 @@ html{
 /*CONTACTO*/
 
 .contacto{
-    background-image: url(../image/fondoContacto1.png);
+    background-image: url(../image/fondoContacto1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -503,7 +503,7 @@ html{
     background-image: 
         linear-gradient(rgba(255, 0, 0, 0.01), 
         rgba(255,255,255,0.20)),
-        url(../image/seccionEntrenamientos.png);
+        url(../image/seccionEntrenamientos.webp);
     background-size: cover;
     background-position: top;
     padding: 2rem 2rem;
