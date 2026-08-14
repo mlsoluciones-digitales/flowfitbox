@@ -65,7 +65,7 @@
 
         <div class="container">
             <div id="carouselNovedades" class="carousel">
-                <!-- VIENE DEL JSON -->
+                <!-- TRAE LOS DATOS DE NOVEDADES.JSON Y NOVEDADES.JS -->
             </div>
         </div>
     </section>
@@ -103,93 +103,9 @@
         <div>
             <h2 class="tituloSecciones">ENTRENAMIENTOS</h2>
         </div>
-        <div class="columns is-centered is-multiline">
-            <div class="column is-one-third">
-                <div class="card">
-                    <div class="card-image card-image-entrenamientos">
-                        <figure class="image">
-                            <img src="image/crossfit1.webp" alt="">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="title titulo-entrenamiento">
-                            CROSSFIT
-                        </h3>
-                        <p class="texto-entrenamiento">
-                            Entrenamiento de alta intensidad que combina fuerza, resistencia, gimnasia y levantamiento olímpico. Cada clase propone nuevos desafíos para mejorar tu rendimiento físico de manera integral.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class="card">
-                    <div class="card-image card-image-entrenamientos">
-                        <figure class="image">
-                            <img src="image/funcional1.webp" alt="">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="title titulo-entrenamiento">
-                            FUNCIONAL
-                        </h3>
-                        <p class="texto-entrenamiento">
-                            Entrenamiento basado en movimientos naturales del cuerpo que mejora la fuerza, el equilibrio, la movilidad y la resistencia. Ideal para potenciar el rendimiento en la vida diaria y en cualquier deporte.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class="card">
-                    <div class="card-image card-image-entrenamientos">
-                        <figure class="image">
-                            <img src="image/adolescente1.webp" alt="">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="title titulo-entrenamiento">
-                            CONSTRUCCION DEL DEPORTISTA ADOLESCENTE
-                        </h3>
-                        <p class="texto-entrenamiento">
-                            Programa diseñado para jóvenes que buscan desarrollar una base física sólida. Se trabaja la técnica, la coordinación, la fuerza y la movilidad en un entorno seguro, favoreciendo un crecimiento deportivo saludable.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class="card">
-                    <div class="card-image card-image-entrenamientos">
-                        <figure class="image">
-                            <img src="image/hyrox1.webp" alt="">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="title titulo-entrenamiento">
-                            HYROX
-                        </h3>
-                        <p class="texto-entrenamiento">
-                            Entrenamiento que combina carrera y estaciones de ejercicios funcionales, inspirado en la competencia internacional HYROX. Perfecto para quienes buscan mejorar su resistencia, velocidad y capacidad física general.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-one-third">
-                <div class="card">
-                    <div class="card-image card-image-entrenamientos">
-                        <figure class="image">
-                            <img src="image/musculacion1.webp" alt="">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="title titulo-entrenamiento">
-                            MUSCULACION
-                        </h3>
-                        <p class="texto-entrenamiento">
-                            Programa orientado al desarrollo de la fuerza y la masa muscular mediante ejercicios con cargas progresivas. Adaptado a todos los niveles, desde principiantes hasta atletas experimentados.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="entrenamientoContainer" class= "columns is-centered is-multiline">
+           <!--TRAE LOS DATOS DEL ENTRENAMIENTOS.JSON Y ENTRENAMIENTOS.JS-->
+        </div> 
     </section>
     <section id="horarios">
         <div class="containerHorarios">
@@ -288,6 +204,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
     <script src="js/novedades.js"></script>
+    <script src="js/entrenamientos.js"></script>
 
 </body>
 </html>

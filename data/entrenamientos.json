@@ -1,0 +1,7 @@
+[
+    {"id":1, "image": "image/crossfit1.webp", "titulo": "CROSSFIT", "texto": "Entrenamiento de alta intensidad que combina fuerza, resistencia, gimnasia y levantamiento olímpico. Cada clase propone nuevos desafíos para mejorar tu rendimiento físico de manera integral."},
+    {"id":1, "image": "image/funcional1.webp", "titulo": "FUNCIONAL", "texto": "Entrenamiento basado en movimientos naturales del cuerpo que mejora la fuerza, el equilibrio, la movilidad y la resistencia. Ideal para potenciar el rendimiento en la vida diaria y en cualquier deporte."},
+    {"id":1, "image": "image/adolescente1.webp", "titulo": "CONSTRUCCION DEL DEPORTISTA ADOLESCENTE", "texto": "Programa diseñado para jóvenes que buscan desarrollar una base física sólida. Se trabaja la técnica, la coordinación, la fuerza y la movilidad en un entorno seguro, favoreciendo un crecimiento deportivo saludable."},
+    {"id":1, "image": "image/hyrox1.webp", "titulo": "HYROX", "texto": "Entrenamiento que combina carrera y estaciones de ejercicios funcionales, inspirado en la competencia internacional HYROX. Perfecto para quienes buscan mejorar su resistencia, velocidad y capacidad física general."},
+    {"id":1, "image": "image/musculacion1.webp", "titulo": "MUSCULACION", "texto": "Programa orientado al desarrollo de la fuerza y la masa muscular mediante ejercicios con cargas progresivas. Adaptado a todos los niveles, desde principiantes hasta atletas experimentados."}
+]
