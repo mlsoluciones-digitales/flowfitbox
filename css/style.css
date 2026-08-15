@@ -379,6 +379,11 @@ html{
     color: red
 }
 
+.containerClases {
+    display: flex;
+    gap: 2rem; 
+    justify-content: center;
+}
 
 /*CONTACTO*/
 

@@ -8,9 +8,9 @@ async function cargarNovedades() {
             throw new Error("No se puede cargar el archivo JSON");
         }
 
-        const novedades = await response.json();
-        console.log(novedades)
-        mostrarNovedades(novedades);
+        const datos = await response.json();
+        console.log(datos)
+        mostrarNovedades(datos.novedades);
 
         // Acá podríamos inicializar el carrusel
         bulmaCarousel.attach('#carouselNovedades', {
