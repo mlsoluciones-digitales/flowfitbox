@@ -355,6 +355,9 @@ html{
    .card{
     height: auto;
    } 
+   .slider-navigation-next, .slider-navigation-previous{
+    display: none;
+   }
 }
 
 /*HORARIOS*/
