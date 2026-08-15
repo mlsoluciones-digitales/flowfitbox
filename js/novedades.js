@@ -2,14 +2,10 @@ async function cargarNovedades() {
 
     try {
 
-        const response = await fetch("https://script.google.com/macros/s/AKfycbxsY7hsH2jg-c_NsWeR15HUUGj03Y9teb3uBbha2pUwLZqB-4uJ3WTFWCCzb4ICBOzy/exec");
+        const datos = await obtenerDatos();
 
-        if (!response.ok) {
-            throw new Error("No se puede cargar el archivo JSON");
-        }
+        console.log(datos.novedades);
 
-        const datos = await response.json();
-        console.log(datos)
         mostrarNovedades(datos.novedades);
 
         // Acá podríamos inicializar el carrusel
