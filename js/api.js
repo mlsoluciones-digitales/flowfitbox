@@ -7,6 +7,6 @@ async function obtenerDatos(){
     }
 
     const datos = await response.json();
-
+    console.log(datos)
     return datos; 
 }

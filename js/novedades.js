@@ -12,8 +12,8 @@ async function cargarNovedades() {
         bulmaCarousel.attach('#carouselNovedades', {
             slidesToScroll: 1,
             slidesToShow: 3,
-            loop: true,
-            autoplay: true,
+            loop: false,
+            autoplay: false,
             autoplaySpeed: 4000
         });
         

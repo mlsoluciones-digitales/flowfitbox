@@ -12,8 +12,8 @@ fetch("data/entrenamientos.json")
         bulmaCarousel.attach('#entrenamientoContainer', {
                 slidesToScroll: 1,
                 slidesToShow: 1,
-                loop: true,
-                autoplay: true,
+                loop: false,
+                autoplay: false,
                 autoplaySpeed: 4000
             });
     }

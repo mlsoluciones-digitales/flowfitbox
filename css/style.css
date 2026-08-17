@@ -15,7 +15,7 @@ body{
     overflow-x: hidden;
 }
 
-h1, h2, h4, label, a, .bottonReserva, .bottonForm, p{
+h1, h2, h4, label, a, .bottonReserva, .bottonForm, p, .horarioDia, .clase{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
@@ -191,7 +191,11 @@ html{
 
 .novedades{
     padding: 1rem;
-    background-color: black;
+    background-image: url(../image/backgroundSecciones2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #carouselNovedades .card {
@@ -213,13 +217,14 @@ html{
 /*FRASE*/
 
 .frase{
-    background-image: linear-gradient(rgba(255,255,255, 0)), url(../image/fondoFrase2.webp);
+    /*background-image: linear-gradient(rgba(255,255,255, 0)), url(../image/fondoFrase2.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
     /*background-attachment: fixed;*/
-    
+    background-color: rgb(250, 0, 0);
+
 }
 
 
@@ -240,6 +245,10 @@ html{
 
 
 /*NOSOTROS*/
+
+#nosotros{
+    background-image: url(../image/backgroundSecciones2.webp);
+}
 
 .containerNosotros{
     display: grid;
@@ -362,8 +371,19 @@ html{
 
 /*HORARIOS*/
 .containerHorarios{
-    background-image: url(../image/fondoHorarios.webp);
+    background-image: url(../image/backgroundSecciones2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 2rem 1rem;
+}
+
+.horarios{
+    padding: 1rem;
+}
+
+.containerTextos{
+    padding-bottom: 3rem;
 }
 
 .logoFlow{
@@ -378,14 +398,37 @@ html{
     text-align: center;
 }
 
+.horarioDia, .clase{
+    color: white;
+}
+
 .containerTextos span{
     color: red
 }
 
 .containerClases {
+    padding: 0.5rem 1rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.claseHorario{
+    background: rgb(255, 0, 0);
     display: flex;
-    gap: 2rem; 
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 0.7rem 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cardHorario {
+    height: auto !important;
+    min-height: 0;
+    overflow: visible;
+    width: 100%;
 }
 
 /*CONTACTO*/
@@ -508,10 +551,7 @@ html{
 /*BAJO FOOTER*/
 
 .bajoFooter{
-    background-image: 
-        linear-gradient(rgba(255, 0, 0, 0.01), 
-        rgba(255,255,255,0.20)),
-        url(../image/seccionEntrenamientos.webp);
+    background-image: url(../image/backgroundSecciones2.webp);
     background-size: cover;
     background-position: top;
     padding: 2rem 2rem;
