@@ -19,19 +19,11 @@ async function cargarHorarios(){
             autoplaySpeed: 4000
         });
 
-        const loader = document.querySelector("#loader");
-        loader.classList.add("oculto");
-
     } catch (error) {
 
         console.error("Error:", error);
 
-    } finally {
-
-        // Se ejecuta tanto si carga correctamente como si hay un error
-        loader.classList.add("oculto");
-
-    }
+    } 
 }
 
 cargarHorarios();
@@ -94,7 +86,7 @@ function mostrarHorarios(horariosPorDia){
         });
 
         container.innerHTML += `
-            <div class="item">
+            <div class="item tarjetaPorDia">
 
                 <div class="card cardHorario">
 

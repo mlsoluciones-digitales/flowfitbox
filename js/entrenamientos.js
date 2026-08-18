@@ -26,7 +26,7 @@ function mostrarEntrenamientos(entrenamientos){
     contenedor.innerHTML = "";
     entrenamientos.forEach(entrenamiento => {
         contenedor.innerHTML += `
-            <div class="column is-one-third">
+            <div class=" column is-one-fifth">
                 <div class="card">
                     <div class="card-image card-image-entrenamientos">
                         <figure class="image">
@@ -34,7 +34,7 @@ function mostrarEntrenamientos(entrenamientos){
                         </figure>
                     </div>
                     <div class="card-content">
-                        <h3 class="title titulo-entrenamiento">
+                        <h3 class="title titulo-entrenamiento" >
                             ${entrenamiento.titulo}
                         </h3>
                         <p class="texto-entrenamiento">
@@ -45,6 +45,6 @@ function mostrarEntrenamientos(entrenamientos){
             </div>
         `
         
-    }); 
-     
+    });
+
 }

@@ -191,11 +191,7 @@ html{
 
 .novedades{
     padding: 1rem;
-    background-image: url(../image/backgroundSecciones2.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #151515;
 }
 
 #carouselNovedades .card {
@@ -247,6 +243,7 @@ html{
 /*NOSOTROS*/
 
 #nosotros{
+    /*background-color: #0B0B0B;*/
     background-image: url(../image/backgroundSecciones2.webp);
 }
 
@@ -315,26 +312,23 @@ html{
 
 /*ENTRENAMIENTOS*/
 
-.seccionEntrenamientos{
-    background-image: url(../image/seccionEntrenamientos.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 1rem;
-    overflow-x: hidden;
+#entrenamientos {
+    background: #151515;
 }
 
-.seccionEntrenamientos .columns{
-    margin-left: 0;
-    margin-right: 0;
+#entrenamientoContainer{
+    padding-bottom: 2rem;
+}
+
+.cardContainerEntrenamientos{
+    padding: 0rem 3rem;
 }
 
 .card{
     background: rgba(0, 0, 0, 0.45);
     transition: .3s;
-    height: 827px;
-    
+    max-height: auto;
+    max-width: 300px;
 }
 
 .card:hover{
@@ -342,22 +336,38 @@ html{
 }
 
 .card-image-entrenamientos{
-    max-width: 394px;
+    max-width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
 }
 
 .titulo-entrenamiento{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     color: white;
+}
+
+.titulo-entrenamiento::after{
+    content: "";
+    display: block;
+    border-bottom: 2px solid #D4111E;
+    width: 0px;
+    height: 5px;
+    margin: 2px auto 0;
+    transition: 0.3s ease;
+}
+
+.titulo-entrenamiento:hover::after{
+    border-bottom: 2px solid #D4111E;
+    width: 80px;
 }
 
 .texto-entrenamiento{
     font-size: 0.8rem ;
     text-align: center;
     color: white;
+    overflow-wrap: break-word;
 }
 
 @media (max-width: 768px) {
@@ -371,11 +381,54 @@ html{
 
 /*HORARIOS*/
 .containerHorarios{
-    background-image: url(../image/backgroundSecciones2.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 2rem 1rem;
+    background-color: #0A0A0A;
+    padding: 2rem 2rem;
+}
+
+.cardHorario {
+    background: #181818 !important;
+    width: 100%;
+    height: auto !important;
+    min-height: 0;
+}
+
+.diaSemana{
+    font-style: italic;
+    display: inline-block;
+}
+
+.diaSemana::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #E10600;
+    margin: 5px auto 0;
+    transition: 0.5s ease;
+}
+
+.diaSemana:hover::after{
+    width: 80px;
+}
+
+.claseHorario{
+    background: #242424;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    padding: 0.5rem 0rem ;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.horarioDia{
+    padding-left: 1rem;
+    border-right: 3px solid #D4111E;
+}
+
+.clase{
+    margin-left: 30px;
 }
 
 .horarios{
@@ -386,24 +439,19 @@ html{
     padding-bottom: 3rem;
 }
 
-.logoFlow{
-    width: 150px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .containerTextos p{
     font-weight: 900;
+    font-size: 2rem;
     color: white;
     text-align: center;
 }
 
-.horarioDia, .clase{
-    color: white;
+.containerTextos span{
+    color: #E10600; 
 }
 
-.containerTextos span{
-    color: red
+.horarioDia, .clase{
+    color: white;
 }
 
 .containerClases {
@@ -412,28 +460,42 @@ html{
     box-sizing: border-box;
 }
 
-.claseHorario{
-    background: rgb(255, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 5px;
-    padding: 0.7rem 1rem;
-    margin-bottom: 0.5rem;
-    width: 100%;
-    box-sizing: border-box;
+.tarjetaPorDia{
+    width: auto;
+    padding: 1rem;
 }
 
+
 .cardHorario {
-    height: auto !important;
-    min-height: 0;
-    overflow: visible;
-    width: 100%;
+    background: linear-gradient(
+        145deg,
+        #171717,
+        #0D0D0D
+    );
+
+    border-radius: 5px;
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.5);
+
+    border: 1px solid #222;
+}
+
+.slider-navigation-next, .slider-navigation-previous {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 768px ) {
+    .containerTextos p {
+        font-size: 1.2rem;
+    }
 }
 
 /*CONTACTO*/
 
 .contacto{
+    /*background-color: #151515;*/
     background-image: url(../image/fondoContacto1.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -485,6 +547,10 @@ html{
 }
 
 /*FOOTER*/
+
+#footer{
+    background-color: #050505;
+}
 
 .containerFooter{
     display: flex;
