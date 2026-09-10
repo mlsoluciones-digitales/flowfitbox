@@ -1,0 +1,223 @@
+:root{
+    color-scheme: dark !important;
+    --color-principal: #cf072f;
+    --color-secundario: black;
+    --color-borde-suave: #bcb4b452; 
+    --fuentePrincipal: "Bebas Neue", sans-serif;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*outline: 1px solid red*/
+}
+
+html, body{
+    background-color: var(--color-secundario);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.tituloPrincipal{
+    font-size: 100px;
+}
+
+
+h1, h4, a, button, .subtitulo {
+    font-family: var(--fuentePrincipal);
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: white;
+}
+
+.navbar-item, .subtitle, .button{
+    color: white;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+
+.navbar-item:hover{
+    background-color: rgba(207, 7, 47, 0.15);
+}
+
+.title{
+    color: var(--color-principal);
+}
+
+/* NAVBAR */
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(16px);
+    height: 70px;
+    
+}
+
+.navbar-start{
+    margin-left: auto;
+}
+
+.logo{
+    max-height: 45px !important;
+    width: auto;
+}
+
+.navbar-brand {
+    margin-left: 2rem;
+}
+
+
+.navbarContacto{
+    margin-right: 2rem;
+    align-items: center;
+    display: flex;
+}
+
+.navbarContacto .button{
+    width: 120px;
+    background-color: var(--color-principal);
+    border-radius: 15px;
+}
+
+.navbarContacto .button:hover{
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-principal);
+}
+
+.navbarContacto .button:active{
+    background-color: #591926;
+}
+
+/* HERO */
+
+.heroHome{
+    height: 100vh;
+    padding: 4rem;
+    display: flex;
+    background-image: url(../image/hero.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.containerHero{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 2rem;
+}
+
+.buttonPlanes {
+    background-color: var(--color-principal);
+}
+
+.buttonPlanes:hover {
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-principal);
+}
+
+.buttonPlanes:active{
+    background-color: #591926;
+}
+
+.buttonContacto{
+    background-color: rgb(40, 39, 39);
+}
+
+.buttonContacto:hover{
+    background-color: rgb(72, 71, 71);
+}
+
+.buttonContacto:active{
+    background-color: #c9c6c6;
+}
+
+
+.puntoSubtitle{
+    color: var(--color-principal);
+}
+
+/* MARQUEE */
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    border-top: 1px solid var(--color-borde-suave);
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 40s linear infinite; /* ajustá la duración: más = más lento */
+}
+
+/* Pausa al pasar el mouse */
+.marquee:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.marquee-item {
+    color: #c1bebe;
+    font-family: var(--fuentePrincipal);
+    font-weight: 800;
+    font-size: 60px;
+    letter-spacing: 0px;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.marquee-dot {
+    margin: 0 30px;
+    color: var(--color-principal);
+    font-size: 12px;
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); } /* -50% porque el contenido está duplicado x2 */
+
+}    
+/* EXPERIENCIA FLOW */
+
+
+.containerExperienciaFlow{
+    padding: 4rem;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.tituloExperiencia{
+    font-family: var(--fuentePrincipal);
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+.textoFlow p {
+ color: #cecece;
+ text-align: start;
+}
+
+
+.textoFlow span{
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+
+/*DISCIPLINAS*/
