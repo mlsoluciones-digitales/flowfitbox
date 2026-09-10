@@ -1,6 +1,6 @@
 :root{
     color-scheme: dark !important;
-    --color-principal: #cf072f;
+    --color-principal: hwb(348 3% 19%);
     --color-secundario: black;
     --color-borde-suave: #bcb4b452; 
     --fuentePrincipal: "Bebas Neue", sans-serif;
@@ -12,6 +12,10 @@
     padding: 0;
     box-sizing: border-box;
     /*outline: 1px solid red*/
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 html, body{
@@ -220,4 +224,51 @@ h1, h4, a, button, .subtitulo {
 }
 
 
-/*DISCIPLINAS*/
+/*ENTRENAMIENTOS*/
+
+#entrenamientos{
+    padding: 4rem;
+}
+
+.tituloSeccion{
+    padding: 2rem 4rem;
+}
+
+.tituloSeccion h2{
+    font-family: var(--fuentePrincipal);
+    font-size: 4.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.containerEntrenamientos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.entrenamiento{
+    padding: 2rem;
+}
+
+.entrenamiento:hover {
+    border: 1px solid rgba(348,3,19, 0.25);
+    border-radius: 25px;
+    background: rgba(348,3,19, 0.03);
+}
+
+.numeroEntrenamiento{
+    font-family: var(--fuentePrincipal);
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+.textoEntrenamiento{
+    font-family: var(--fuentePrincipal);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+}
