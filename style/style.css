@@ -196,12 +196,16 @@ h1, h4, a, button, .subtitulo {
 }    
 /* EXPERIENCIA FLOW */
 
+#experienciaFlow{
+    padding: 4rem;
+}
 
 .containerExperienciaFlow{
     padding: 4rem;
     display: grid; 
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    gap: 2rem;
 }
 
 .tituloExperiencia{
@@ -209,6 +213,10 @@ h1, h4, a, button, .subtitulo {
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 2px;
+}
+
+.imagenFlow img{
+    border-radius: 25px;
 }
 
 
@@ -232,6 +240,7 @@ h1, h4, a, button, .subtitulo {
 
 .tituloSeccion{
     padding: 2rem 4rem;
+    border-top: 1px solid var(--color-borde-suave);
 }
 
 .tituloSeccion h2{
@@ -244,13 +253,14 @@ h1, h4, a, button, .subtitulo {
 .containerEntrenamientos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 3rem;
+    gap: 2rem;
     padding-left: 4rem;
     padding-right: 4rem;
 }
 
 .entrenamiento{
     padding: 2rem;
+    width: 300px;
 }
 
 .entrenamiento:hover {
@@ -268,7 +278,33 @@ h1, h4, a, button, .subtitulo {
 .textoEntrenamiento{
     font-family: var(--fuentePrincipal);
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
 
+}
+
+/*GALERIA*/
+
+#galeria{
+    padding: 4rem;
+}
+
+.containerGaleria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.containerImagen img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+}
+
+/*PLANES*/
+
+#planes{
+    padding: 4rem;
 }
