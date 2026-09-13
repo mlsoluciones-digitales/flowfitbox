@@ -303,6 +303,11 @@ h1, h4, a, button, .subtitulo {
     border-radius: 25px;
 }
 
+.containerVerMas{
+    padding-top: 2rem;
+    text-align: center;
+}
+
 /*PLANES*/
 
 #planes{
