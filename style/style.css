@@ -92,7 +92,6 @@ h1, h4, a, button, .subtitulo {
 
 .navbarContacto .button:hover{
     background-color: var(--color-secundario);
-    border: 1px solid var(--color-principal);
 }
 
 .navbarContacto .button:active{
@@ -123,7 +122,6 @@ h1, h4, a, button, .subtitulo {
 
 .buttonPlanes:hover {
     background-color: var(--color-secundario);
-    border: 1px solid var(--color-principal);
 }
 
 .buttonPlanes:active{
@@ -290,6 +288,8 @@ h1, h4, a, button, .subtitulo {
 }
 
 .containerGaleria{
+    padding-left:2rem ;
+    padding-right: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;
@@ -308,8 +308,61 @@ h1, h4, a, button, .subtitulo {
     text-align: center;
 }
 
+.containerVerMas .verMas{
+    background-color: var(--color-principal);
+}
+
+.containerVerMas .verMas:hover{
+    background-color: var(--color-secundario);
+}
+
+.containerVerMas .verMas:active{
+    background-color: #591926;
+}
+
 /*PLANES*/
 
 #planes{
     padding: 4rem;
 }
+
+.containerPlanes{
+    padding-left:2rem ;
+    padding-right: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.detallePlan{
+    padding: 2rem;
+    border: 1px solid var(--color-borde-suave);
+    border-radius: 20px;
+}
+
+.detallePlan:hover{
+    border: 1px solid rgba(348,3,19, 0.25);
+    background: linear-gradient(rgba(255, 0, 0, 0.135), rgba(255, 255, 255, 0.098));
+}
+
+.tituloPlan{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.descripcionPlan{
+    font-size: 20px;
+    padding-bottom: 1rem;
+}
+
+.valorPlan{
+    font-family: var(--fuentePrincipal);
+    color: var(--color-principal);
+    font-size: 30px;
+    padding-bottom: 1rem;
+}
+
+.containerButtonPlan{
+    text-align: center;
+}
+
