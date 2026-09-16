@@ -29,7 +29,7 @@ html, body{
 }
 
 
-h1, h4, a, button, .subtitulo {
+h1, h2, h4, h6, a, button, .subtitulo {
     font-family: var(--fuentePrincipal);
     font-optical-sizing: auto;
     font-weight: 900;
@@ -77,9 +77,12 @@ h1, h4, a, button, .subtitulo {
     margin-left: 2rem;
 }
 
+.navbar-menu{
+    margin-left: 200px;
+}
 
 .navbarContacto{
-    margin-right: 2rem;
+    padding-left: 200px;
     align-items: center;
     display: flex;
 }
@@ -104,7 +107,7 @@ h1, h4, a, button, .subtitulo {
     height: 100vh;
     padding: 4rem;
     display: flex;
-    background-image: url(../image/hero.webp);
+    background-image: url(../image/hero2.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -202,7 +205,7 @@ h1, h4, a, button, .subtitulo {
     padding: 4rem;
     display: grid; 
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    align-items: start;
     gap: 2rem;
 }
 
@@ -213,8 +216,15 @@ h1, h4, a, button, .subtitulo {
     letter-spacing: 2px;
 }
 
+.imagenFlow{
+    position: sticky;
+    top: 100px;
+}
+
 .imagenFlow img{
+    width: 100%;
     border-radius: 25px;
+    display: block;
 }
 
 
@@ -259,6 +269,8 @@ h1, h4, a, button, .subtitulo {
 .entrenamiento{
     padding: 2rem;
     width: 300px;
+    border: 1px solid var(--color-borde-suave);
+    border-radius: 25px;
 }
 
 .entrenamiento:hover {
@@ -295,12 +307,25 @@ h1, h4, a, button, .subtitulo {
     gap: 1rem;
 }
 
+.containerImagen{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
 .containerImagen img{
     width: 300px;
     height: 300px;
     object-fit: cover;
     object-position: center;
     border-radius: 25px;
+    transition: transform 0.4s ease;
+
+}
+
+.containerImagen img:hover{
+    transform: scale(1.1);
 }
 
 .containerVerMas{
@@ -318,6 +343,51 @@ h1, h4, a, button, .subtitulo {
 
 .containerVerMas .verMas:active{
     background-color: #591926;
+}
+
+/*Ventana Modal*/
+
+.modal{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,.9);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 9999 !important;
+    
+}
+
+.contenidoModal{
+    max-width: 100%;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    animation: zoomModal .3s ease;
+    border: 10px solid var(--color-borde-suave);
+}
+
+@keyframes zoomModal{
+    from{
+        transform: scale(.8);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.cerrar{
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
 }
 
 /*PLANES*/
@@ -341,8 +411,11 @@ h1, h4, a, button, .subtitulo {
 }
 
 .detallePlan:hover{
+    background: rgba(348,3,19, 0.03);
+}
+
+.detallePlan:hover{
     border: 1px solid rgba(348,3,19, 0.25);
-    background: linear-gradient(rgba(255, 0, 0, 0.135), rgba(255, 255, 255, 0.098));
 }
 
 .tituloPlan{
@@ -350,9 +423,15 @@ h1, h4, a, button, .subtitulo {
     padding-bottom: 1rem;
 }
 
-.descripcionPlan{
-    font-size: 20px;
+.subtituloPlan{
+    font-size: 1.5rem;
     padding-bottom: 1rem;
+    color: var(--color-principal);
+}
+
+.descripcionPlan{
+    padding-bottom: 1rem;
+    color: white;
 }
 
 .valorPlan{
@@ -366,3 +445,87 @@ h1, h4, a, button, .subtitulo {
     text-align: center;
 }
 
+.containerButtonPlan{
+    padding-top: 1rem;
+}
+
+.buttonPlan{
+    width: 150px;
+    font-size: 1rem;
+    background-color: var(--color-principal);
+    border-radius: 15px;
+}
+
+.buttonPlan:hover{
+    background-color: var(--color-secundario);
+}
+
+.buttonPlan:active{
+    background-color: #591926;
+}
+
+/*INSTALAR APP*/
+
+.containerApp{
+    padding: 4rem;
+}
+
+.subtituloApp{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.subtituloApp span{
+    color: var(--color-principal);
+}
+
+.textoInstalaApp{
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+}
+
+.textoAsiDeSimple{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.textoAsiDeSimple span{
+    font-family: var(--fuentePrincipal);
+    color: var(--color-principal);
+}
+
+.containterSistOperativos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto; 
+}
+
+.containterSistOperativos img {
+    margin-top: 2rem;
+    width: 180px;
+}
+
+
+/*LOGO WHATSAPP FLOTANTE*/
+
+.botonWhatsappFlotante{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+    
+}
+
+.logoWhatsapp{
+    width: 60px;
+    height: 60px;
+    transition: transform .3s;
+}
+
+.logoWhatsapp:hover {
+    transform: scale(1.1);
+}

@@ -8,6 +8,9 @@ fetch("data/galeria.json")
     mostrarImagen(); // // EJECUTO LA FUNCION UNA VEZ QUE LLEGARON LOS DATOS. 
 }); 
 
+
+
+//ESTA FUNCION MUESTRA LAS IMAGENES DE LA GALERIA DE FOTOS 
 function mostrarImagen(){
     const contenedor = document.querySelector(".containerGaleria"); 
 
@@ -21,14 +24,56 @@ function mostrarImagen(){
             </div>
         `        
     ; 
-}
+    }
+
+    agregarEventoModal();
+
+    const agregar = document.querySelector(".verMas"); 
+    if(cantidadImagen < imagenes.length){
+        agregar.textContent = "Ver Mas"
+    } else{
+        agregar.textContent = "Ver Menos"
+    }
+
+
 }; 
 
 // ESTA FUNCION SUMA 6 Y VUELVE A LLAMAR A LA FUNCION
 function agregarImagenes(){
-
+    if( cantidadImagen < imagenes.length){
     cantidadImagen += 6;
+    } else {
+        cantidadImagen = 6; 
+    }
     mostrarImagen(); 
+}
+
+// ESTA FUNCION ABRE GUARDA Y MUESTRA EL MODAL AL HACER CLICK EN UNA IMAGEN. 
+function agregarEventoModal(){
+    const modal = document.querySelector("#modalImagenGaleria"); 
+    const imagenModal = document.querySelector("#imagenModalGaleria"); 
+    const cerrarModal = document.querySelector("#cerrarModalGaleria"); 
+
+    document.querySelectorAll(".containerImagen img").forEach(img => {
+
+        img.addEventListener("click", () => {
+
+            imagenModal.src = img.src; 
+            modal.style.display = "flex"; 
+        }); 
+    }); 
+
+    cerrarModal.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+    modal.addEventListener("click", (e) => {
+
+        if(e.target === modal){
+            modal.style.display = "none";
+        }
+
+    });
 }
 
 

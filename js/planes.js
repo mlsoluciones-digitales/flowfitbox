@@ -11,12 +11,14 @@ function mostrarPlanes(planes){
         container.innerHTML += `
             <div class="detallePlan">
                 <h4 class="tituloPlan">${plan.tituloPlan}</h4>
+
+                <h6 class="subtituloPlan">${plan.subtitulo}</h6>
+
                 <p class="descripcionPlan">
                     ${plan.descripcionPlan}
                 </p>
-                <p class="valorPlan">VALOR $${plan.valor}</p>
                 <div class="containerButtonPlan">
-                    <button class="button buttonPlan">Contactarme</button>
+                    <a href="https://wa.me/541171570545?text=${plan.mensajeWhatsApp}"><button class="button buttonPlan">ESCRIBINOS</button></a>
                 </div>
             </div>    
         ` 
