@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*outline: 1px solid red*/
+    outline: 1px solid red
 }
 
 html{
@@ -21,7 +21,7 @@ html{
 html, body{
     background-color: var(--color-secundario);
     max-width: 100%;
-    overflow-x: hidden;
+    
 }
 
 .tituloPrincipal{
@@ -78,13 +78,13 @@ h1, h2, h4, h6, a, button, .subtitulo {
 }
 
 .navbar-menu{
-    margin-left: 200px;
+    margin-left: auto;
 }
 
 .navbarContacto{
-    padding-left: 200px;
-    align-items: center;
-    display: flex;
+    width: 120px;
+    background-color: var(--color-principal);
+    border-radius: 5px;
 }
 
 .navbarContacto .button{
@@ -300,23 +300,22 @@ h1, h2, h4, h6, a, button, .subtitulo {
 }
 
 .containerGaleria{
-    padding-left:2rem ;
-    padding-right: 2rem;
+    padding: 0 2rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
 }
 
 .containerImagen{
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
     border-radius: 25px;
 }
 
 .containerImagen img{
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: center;
     border-radius: 25px;

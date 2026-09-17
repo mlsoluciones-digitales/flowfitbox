@@ -1,4 +1,4 @@
-let cantidadImagen = 6; 
+let cantidadImagen = 8; 
 let imagenes = []
 
 fetch("data/galeria.json")
@@ -41,7 +41,7 @@ function mostrarImagen(){
 // ESTA FUNCION SUMA 6 Y VUELVE A LLAMAR A LA FUNCION
 function agregarImagenes(){
     if( cantidadImagen < imagenes.length){
-    cantidadImagen += 6;
+    cantidadImagen += 8;
     } else {
         cantidadImagen = 6; 
     }
