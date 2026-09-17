@@ -217,7 +217,7 @@ h1, h2, h4, h6, a, button, .subtitulo {
 }
 
 .imagenFlow{
-    position: sticky;
+    /*position: sticky;*/
     top: 100px;
 }
 
@@ -227,8 +227,17 @@ h1, h2, h4, h6, a, button, .subtitulo {
     display: block;
 }
 
+.textoFlow {
+    opacity: 0;
+}
+
+.textoFlow.animate__animated {
+    animation-duration:1.5s;
+    animation-timing-function: ease-out;
+}
 
 .textoFlow p {
+    
  color: #cecece;
  text-align: start;
 }
@@ -244,6 +253,15 @@ h1, h2, h4, h6, a, button, .subtitulo {
 
 #entrenamientos{
     padding: 4rem;
+}
+
+.entrenamiento {
+    opacity: 0;
+}
+
+.entrenamiento {
+    animation-duration: 1.8s;
+    animation-timing-function: ease-out;
 }
 
 .tituloSeccion{
@@ -407,6 +425,12 @@ h1, h2, h4, h6, a, button, .subtitulo {
     padding: 2rem;
     border: 1px solid var(--color-borde-suave);
     border-radius: 20px;
+    opacity: 0;
+}
+
+.detallePlan.animate__animated {
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
 
 .detallePlan:hover{
@@ -660,9 +684,11 @@ h1, h2, h4, h6, a, button, .subtitulo {
         max-height: 40px !important;
     }
 
-    /*
-    El menú de Bulma pasa a ser desplegable.
-    */
+
+    .navbar-burger{
+        color: var(--color-principal);
+    }
+
 
     .navbar-menu {
         margin-left: 0;
@@ -694,15 +720,20 @@ h1, h2, h4, h6, a, button, .subtitulo {
     }
 
     .subtitulo {
+        padding-top: 1rem;
         font-size: 1.2rem !important;
     }
 
     .containerButtonHero {
+        padding-top: 2rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
 
+    .buttonContacto{
+        width: 12rem;
+    }
 
     /* MARQUEE */
 
@@ -805,13 +836,23 @@ h1, h2, h4, h6, a, button, .subtitulo {
         font-size: 1.5rem;
     }
 
+    .textoAsiDeSimple span{
+        font-size: 1.5rem;
+    }
+
+    .textoAsiDeSimple p{
+        font-size: 1rem;
+    }
+
     .containterSistOperativos {
         flex-direction: column;
         gap: 0.5rem;
+        padding-top: 1rem;
     }
 
     .containterSistOperativos img {
         width: 180px;
+        margin-top: 0.3rem;
     }
 
 
