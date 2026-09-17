@@ -507,9 +507,12 @@ h1, h2, h4, h6, a, button, .subtitulo {
 .containterSistOperativos img {
     margin-top: 2rem;
     width: 180px;
+    transition: all .3s ease;
 }
 
-
+.containterSistOperativos img:hover {
+    transform: translateY(-2px);
+}
 /*LOGO WHATSAPP FLOTANTE*/
 
 .botonWhatsappFlotante{
