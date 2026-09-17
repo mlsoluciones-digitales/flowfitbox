@@ -44,6 +44,11 @@ function agregarImagenes(){
     cantidadImagen += 8;
     } else {
         cantidadImagen = 6; 
+
+        document.querySelector("#galeria").scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
     }
     mostrarImagen(); 
 }

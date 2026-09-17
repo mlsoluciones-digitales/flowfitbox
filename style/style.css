@@ -217,7 +217,6 @@ h1, h2, h4, h6, a, button, .subtitulo {
 }
 
 .imagenFlow{
-    /*position: sticky;*/
     top: 100px;
 }
 
@@ -556,6 +555,16 @@ h1, h2, h4, h6, a, button, .subtitulo {
     transform: scale(1.1);
 }
 
+/*COMENZAR*/
+/*#comenzar{
+    background-image: url(../image/estasListo.webp);
+    background-position: center 70% ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*/
+
+
 /* MEDIAS QUERY
 
 /*TABLET*/
@@ -702,6 +711,9 @@ h1, h2, h4, h6, a, button, .subtitulo {
         width: 100%;
     }
 
+    .navbar-item{
+        font-size: 15px;
+    }
 
     /* HERO */
 
