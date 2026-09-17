@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red
+    /*outline: 1px solid red*/
 }
 
 html{
@@ -530,4 +530,301 @@ h1, h2, h4, h6, a, button, .subtitulo {
 
 .logoWhatsapp:hover {
     transform: scale(1.1);
+}
+
+/* MEDIAS QUERY
+
+/*TABLET*/
+
+
+@media (max-width: 1024px) {
+
+    /* NAVBAR */
+
+    .navbar-brand {
+        margin-left: 1rem;
+    }
+
+    .navbar-menu {
+        margin-left: 0;
+    }
+
+    .navbar-item {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    /* HERO */
+
+    .heroHome {
+        padding: 2rem;
+    }
+
+    .containerHero {
+        padding-left: 1rem;
+    }
+
+    .tituloPrincipal {
+        font-size: 80px;
+    }
+
+    /* EXPERIENCIA FLOW */
+
+    #experienciaFlow {
+        padding: 2rem;
+    }
+
+    .containerExperienciaFlow {
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    /* ENTRENAMIENTOS */
+
+    #entrenamientos {
+        padding: 2rem;
+    }
+
+    .containerEntrenamientos {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .entrenamiento {
+        width: 100%;
+    }
+
+    /* GALERÍA */
+
+    #galeria {
+        padding: 2rem;
+    }
+
+    .containerGaleria {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 0 1rem;
+    }
+
+    /* PLANES */
+
+    #planes {
+        padding: 2rem;
+    }
+
+    .containerPlanes {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* APP */
+
+    .containerApp {
+        padding: 2rem;
+    }
+
+    .subtituloApp {
+        font-size: 3rem;
+    }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+    /* GENERAL */
+
+    .tituloSeccion {
+        padding: 1.5rem 1rem;
+    }
+
+    .tituloSeccion h2 {
+        font-size: 3rem;
+    }
+
+
+    /* NAVBAR */
+
+    .navbar {
+        height: 60px;
+    }
+
+    .navbar-brand {
+        margin-left: 0.5rem;
+    }
+
+    .logo {
+        max-height: 40px !important;
+    }
+
+    /*
+    El menú de Bulma pasa a ser desplegable.
+    */
+
+    .navbar-menu {
+        margin-left: 0;
+    }
+
+    .navbarContacto {
+        width: 100%;
+    }
+
+    .navbarContacto .button {
+        width: 100%;
+    }
+
+
+    /* HERO */
+
+    .heroHome {
+        padding: 1.5rem;
+        background-position: center;
+    }
+
+    .containerHero {
+        padding-left: 0;
+    }
+
+    .tituloPrincipal {
+        font-size: 60px;
+        line-height: 0.95;
+    }
+
+    .subtitulo {
+        font-size: 1.2rem !important;
+    }
+
+    .containerButtonHero {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+
+    /* MARQUEE */
+
+    .marquee-item {
+        font-size: 40px;
+    }
+
+    .marquee-dot {
+        margin: 0 15px;
+    }
+
+
+    /* EXPERIENCIA FLOW */
+
+    #experienciaFlow {
+        padding: 1rem;
+    }
+
+    .containerExperienciaFlow {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .imagenFlow {
+        position: static;
+    }
+
+    .tituloExperiencia {
+        font-size: 22px;
+    }
+
+
+    /* ENTRENAMIENTOS */
+
+    #entrenamientos {
+        padding: 1rem;
+    }
+
+    .containerEntrenamientos {
+        grid-template-columns: 1fr;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 1rem;
+    }
+
+    .entrenamiento {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+
+    /* GALERÍA */
+
+    #galeria {
+        padding: 1rem;
+    }
+
+    .containerGaleria {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+
+
+    /* PLANES */
+
+    #planes {
+        padding: 1rem;
+    }
+
+    .containerPlanes {
+        grid-template-columns: 1fr;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 1rem;
+    }
+
+    .detallePlan {
+        padding: 1.5rem;
+    }
+
+
+    /* APP */
+
+    .containerApp {
+        padding: 2rem 1rem;
+    }
+
+    .subtituloApp {
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+
+    .textoInstalaApp {
+        font-size: 1.1rem;
+    }
+
+    .textoAsiDeSimple {
+        font-size: 1.5rem;
+    }
+
+    .containterSistOperativos {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .containterSistOperativos img {
+        width: 180px;
+    }
+
+
+    /* WHATSAPP */
+
+    .botonWhatsappFlotante {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .logoWhatsapp {
+        width: 50px;
+        height: 50px;
+    }
+
 }
