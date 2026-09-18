@@ -490,6 +490,7 @@ h1, h2, h4, h6, a, button, .subtitulo {
 
 .containerApp{
     padding: 4rem;
+    border-top: 1px solid var(--color-borde-suave);
 }
 
 .subtituloApp{
@@ -554,6 +555,149 @@ h1, h2, h4, h6, a, button, .subtitulo {
 .logoWhatsapp:hover {
     transform: scale(1.1);
 }
+
+
+/*ONE MORE REP*/
+
+#oneMoreRep{
+    background-image: url(../image/oneMoreRep.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.oneMoreRepTexto{
+    font-family: var(--fuentePrincipal);
+    font-size: clamp(3rem, 10vw, 150px);
+    text-align: center;
+}
+
+/*FOOTER*/
+
+.footerContainer{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: flex-start;
+    background-color: var(--color-secundario);
+    padding: 2rem 0;
+    border-top: 2px solid var(--color-principal);
+}
+
+.footerLogo{
+    text-align: justify;
+}
+
+.fa-instagram, .fa-location-dot, .fa-whatsapp{
+    padding: 2rem 0;
+    font-size: 25px;
+    color: white;
+}
+
+.fa-instagram:hover, .fa-location-dot:hover, .fa-whatsapp:hover{
+    color: var(--color-principal)
+}
+
+.footerLogo img{
+    width: 200px;
+    height: auto;
+}
+
+.footerLogo p {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.5rem;
+    color: white;
+    text-align: justify;
+    padding-top: 20px;
+}
+
+.footerNavbar,
+.footerContacto {
+    text-align: left;
+}
+
+.subtituloNavbarFooter{
+    color: var(--color-principal);
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+
+.subtituloNavbarFooter::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    width: 40px;
+    height: 2px;
+    background-color: var(--color-principal);
+}
+
+.logoInsta{
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.logoInsta::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 35px;
+    height: 1px;
+    background-color: var(--color-principal);
+}
+
+.logoInstagram{
+    position: relative;
+    display: inline-block;
+}
+
+.logoInstagram::after{
+    content: "";
+    position: absolute;
+    left: calc(100% + 20px);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 25px;
+    background-color: var(--color-principal);
+}
+
+.footerNavbar li{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    padding: 10px 0;
+    font-size: 15px;
+    color: white;
+}
+
+.footerNavbar li:hover{
+    color: var(--color-principal);
+}
+
+.conteinerRed{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.conteinerRed p{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 15px;
+
+}
+
+.conteinerRed p:hover{
+    color: var(--color-principal);
+}
+
+
 
 /*COMENZAR*/
 /*#comenzar{
@@ -659,6 +803,44 @@ h1, h2, h4, h6, a, button, .subtitulo {
 
     .subtituloApp {
         font-size: 3rem;
+    }
+
+    /* ONE MORE REP */
+
+    .oneMoreRepTexto {
+        font-size: clamp(4rem, 10vw, 100px);
+    }
+
+
+    /* FOOTER */
+
+    .footerContainer {
+        justify-content: space-evenly;
+        gap: 2rem;
+        padding: 2.5rem 2rem;
+    }
+
+    .footerLogo img {
+        width: 170px;
+    }
+
+    .footerLogo p {
+        font-size: 1.2rem;
+    }
+
+    .subtituloNavbarFooter {
+        font-size: 18px;
+    }
+
+    .footerNavbar li,
+    .conteinerRed p {
+        font-size: 14px;
+    }
+
+    .fa-instagram,
+    .fa-location-dot,
+    .fa-whatsapp {
+        font-size: 22px;
     }
 
 }
@@ -880,4 +1062,89 @@ h1, h2, h4, h6, a, button, .subtitulo {
         height: 50px;
     }
 
+
+    /* ONE MORE REP */
+
+    #oneMoreRep {
+        background-position: center;
+    }
+
+    .oneMoreRepTexto {
+        font-size: clamp(3rem, 14vw, 6rem);
+        line-height: 1;
+        padding: 3rem 1rem;
+    }
+
+
+    /* FOOTER */
+
+    .footerContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+        padding: 3rem 1.5rem;
+    }
+
+    .footerLogo,
+    .footerNavbar,
+    .footerContacto {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    /* LOGO */
+
+    .footerLogo img {
+        width: 170px;
+    }
+
+    .footerLogo p {
+        font-size: 1.1rem;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+
+    /* TITULOS */
+
+    .subtituloNavbarFooter {
+        font-size: 18px;
+    }
+
+    .subtituloNavbarFooter::after {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 10px;
+    }
+
+
+    /* NAVEGACION */
+
+    .footerNavbar li {
+        font-size: 15px;
+        padding: 7px 0;
+    }
+
+
+    /* ICONOS */
+
+    .fa-instagram,
+    .fa-location-dot,
+    .fa-whatsapp {
+        font-size: 24px;
+        padding: 1rem 0;
+    }
+
+
+    /* CONTACTO */
+
+    .conteinerRed {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .conteinerRed p {
+        font-size: 14px;
+    }
 }
