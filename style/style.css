@@ -489,7 +489,7 @@ h1, h2, h4, h6, a, button, .subtitulo {
 /*INSTALAR APP*/
 
 .containerApp{
-    padding: 4rem;
+    padding: 4rem 1rem ;
     border-top: 1px solid var(--color-borde-suave);
 }
 
@@ -798,7 +798,7 @@ h1, h2, h4, h6, a, button, .subtitulo {
     /* APP */
 
     .containerApp {
-        padding: 2rem;
+        padding: 4rem 1rem;
     }
 
     .subtituloApp {
@@ -1014,7 +1014,7 @@ h1, h2, h4, h6, a, button, .subtitulo {
     /* APP */
 
     .containerApp {
-        padding: 2rem 1rem;
+        padding: 4rem 1rem;
     }
 
     .subtituloApp {
