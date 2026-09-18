@@ -87,6 +87,14 @@ h1, h2, h4, h6, a, button, .subtitulo {
     border-radius: 5px;
 }
 
+.navbarContacto:hover{
+    background-color: var(--color-secundario);
+}
+
+.navbarContacto:active{
+    background-color: #591926;
+}
+
 .navbarContacto .button{
     width: 120px;
     background-color: var(--color-principal);
@@ -690,14 +698,53 @@ h1, h2, h4, h6, a, button, .subtitulo {
     font-weight: 400;
     color: white;
     font-size: 15px;
-
 }
 
 .conteinerRed p:hover{
     color: var(--color-principal);
 }
 
+.buttonFooterHablanos{
+    gap: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 20px;
+    height: 50px;
+    background-color: var(--color-principal);
+}
 
+.containerButtonWhatsappFooter{
+    padding: 3rem 0;
+}
+
+.buttonFooterHablanos:hover{
+    background-color: var(--color-secundario);
+}
+
+.buttonFooterHablanos:active{
+    background-color: #591926;
+}
+
+.buttonWhatsappFooter:hover{
+    color: white;
+}
+
+.bajoFooter{
+    border-top: 1px solid var(--color-borde-suave);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem; 
+}
+
+.bajoFooter p{
+    color: white;
+}
+
+.bajoFooter span{
+    color: var(--color-principal);
+    font-weight: bold;
+}
 
 /*COMENZAR*/
 /*#comenzar{
@@ -729,6 +776,10 @@ h1, h2, h4, h6, a, button, .subtitulo {
     .navbar-item {
         font-size: 14px;
         letter-spacing: 2px;
+    }
+
+    .navbar-burger{
+        color: var(--color-principal);
     }
 
     /* HERO */
@@ -841,6 +892,10 @@ h1, h2, h4, h6, a, button, .subtitulo {
     .fa-location-dot,
     .fa-whatsapp {
         font-size: 22px;
+    }
+
+    .logoInstagram{
+        display: none;
     }
 
 }
@@ -1092,6 +1147,9 @@ h1, h2, h4, h6, a, button, .subtitulo {
         text-align: center;
     }
 
+    .logoInstagram{
+        display: none;
+    }
 
     /* LOGO */
 
@@ -1147,4 +1205,23 @@ h1, h2, h4, h6, a, button, .subtitulo {
     .conteinerRed p {
         font-size: 14px;
     }
+
+    .bajoFooter{
+        border-top: 1px solid var(--color-borde-suave);
+        padding: 1rem 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 2rem; 
+    }
+
+        .bajoFooter p{
+        color: white;
+        padding: 1rem 0;
+    }
+
+        .bajoFooter span{
+        color: var(--color-principal);
+        font-weight: bold;
+    }   
 }
