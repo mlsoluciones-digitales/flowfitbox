@@ -18,7 +18,7 @@ function mostrarPlanes(planes){
                     ${plan.descripcionPlan}
                 </p>
                 <div class="containerButtonPlan">
-                    <a href="https://wa.me/541171570545?text=${plan.mensajeWhatsApp}"><button class="button buttonPlan">ESCRIBINOS</button></a>
+                    <a href="https://wa.me/541176544106?text=${plan.mensajeWhatsApp}"><button class="button buttonPlan">ESCRIBINOS</button></a>
                 </div>
             </div>    
         ` 
