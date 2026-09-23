@@ -85,6 +85,7 @@ h1, h2, h4, h6, a, button, .subtitulo {
     width: 120px;
     background-color: var(--color-principal);
     border-radius: 5px;
+    border: 1px solid var(--color-principal);
 }
 
 .navbarContacto:hover{
@@ -129,6 +130,7 @@ h1, h2, h4, h6, a, button, .subtitulo {
 
 .buttonPlanes {
     background-color: var(--color-principal);
+    border: 1px solid var(--color-principal);
 }
 
 .buttonPlanes:hover {
@@ -141,6 +143,7 @@ h1, h2, h4, h6, a, button, .subtitulo {
 
 .buttonContacto{
     background-color: rgb(40, 39, 39);
+    border: 1px solid rgb(40, 39, 39);
 }
 
 .buttonContacto:hover{
@@ -359,6 +362,7 @@ h1, h2, h4, h6, a, button, .subtitulo {
 
 .containerVerMas .verMas{
     background-color: var(--color-principal);
+    border: 1px solid var(--color-principal);
 }
 
 .containerVerMas .verMas:hover{
@@ -484,6 +488,7 @@ h1, h2, h4, h6, a, button, .subtitulo {
     font-size: 1rem;
     background-color: var(--color-principal);
     border-radius: 15px;
+    border: 1px solid var(--color-principal);
 }
 
 .buttonPlan:hover{
@@ -578,6 +583,7 @@ h1, h2, h4, h6, a, button, .subtitulo {
     font-family: var(--fuentePrincipal);
     font-size: clamp(3rem, 10vw, 150px);
     text-align: center;
+    color: rgb(171 177 191);
 }
 
 /*FOOTER*/
@@ -711,6 +717,7 @@ h1, h2, h4, h6, a, button, .subtitulo {
     border-radius: 20px;
     height: 50px;
     background-color: var(--color-principal);
+    border: 1px solid var(--color-principal);
 }
 
 .containerButtonWhatsappFooter{
@@ -1128,6 +1135,7 @@ h1, h2, h4, h6, a, button, .subtitulo {
         font-size: clamp(3rem, 14vw, 6rem);
         line-height: 1;
         padding: 3rem 1rem;
+        color: rgba(171, 177, 191);
     }
 
 
